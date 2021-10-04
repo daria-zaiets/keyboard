@@ -1,0 +1,85 @@
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.title {
+	width: 100%;
+	color: purple;
+	text-align: center;
+}
+
+.inpKey {
+	width: 875px;
+	height: 30px;
+	border: 2px solid orchid;
+	border-radius: 5px;
+	margin: 10px auto;
+}
+
+.keyboard {
+	height: 250px;
+	min-width: 875px;
+	margin: 10px;
+	background: plum;
+	border: 2px solid purple;
+	border-radius: 5px;
+}
+
+.line {
+	display: flex;
+	height: 50px;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.key {
+	border: 1px solid purple;
+	border-radius: 5px;
+	background: orchid;
+	width: 45px;
+	height: 45px;
+	margin: 5px;
+	padding: 2px;
+	text-align: center;
+	line-height: 31px;
+}
+
+.backspace,
+.capslock {
+	width: 75px;
+}
+
+.tab {
+	width: 60px;
+}
+
+.space {
+	width: 300px;
+}
+
+.shift {
+	width: 95px;
+}
+
+.enter {
+	width: 80px;
+}
+
+.ctrl,
+.alt,
+.wind {
+	width: 60px;
+}
+
+.window {
+	width: 25px;
+	margin-bottom: -9px;
+}
+
+.active {
+	background: purple;
+	color: yellow;
+}
