@@ -1,7 +1,15 @@
-
-							// ФУНКЦИИ
+/**
+ *  @param {NodeList} inp - element input 
+ */
 let inp = document.querySelector('.inp-key');
 
+/**
+ * adds styles to the key
+ * 
+ * @param {Number} symbol - key pressed code
+ * @param {String} elem - element selector string
+ * @param {NodeList} key - element-key with selector @elem
+ */
 function pushDown(event) {
 	let symbol = event.keyCode;
 	let elem = '.key[data="' + symbol + '"]';
@@ -9,6 +17,13 @@ function pushDown(event) {
 	key.classList.add('active');
 }
 
+/**
+ * removes styles from a key
+ * 
+ * @param {Number} symbol - key pressed code
+ * @param {String} elem - element selector string
+ * @param {NodeList} key - element-key with selector @elem
+ */
 function release(event) {
 	let symbol = event.keyCode;
 	let elem = '.key[data="' + symbol + '"]';
@@ -16,8 +31,14 @@ function release(event) {
 	key.classList.remove('active');
 }
 
-								// РЕАЛИЗАЦИЯ
 
+/**
+ * adds styles to the pressed key
+ * for tab add and remove on click
+ * 
+ * @param {String} elem - element selector string
+ * @param {NodeList} key - element-key with selector @elem
+ */
 inp.onkeydown = (event) => {
 	if (event.keyCode == 9) {
 		let elem = '.key[data="' + event.keyCode + '"]';
@@ -41,6 +62,13 @@ inp.onkeydown = (event) => {
 	else pushDown(event);
 }
 
+/**
+ * removes styles from released keys
+ * do nothing for tab
+ * 
+ * @param {String} elem - element selector string
+ * @param {NodeList} key - element-key with selector @elem
+ */
 inp.onkeyup = (event) => {
 	if(event.keyCode == 9) {
 		let elem = '.key[data="' + event.keyCode + '"]';
