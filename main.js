@@ -1,6 +1,6 @@
 
 							// ФУНКЦИИ
-let inp = document.querySelector('.inpKey');
+let inp = document.querySelector('.inp-key');
 
 function pushDown(event) {
 	let symbol = event.keyCode;
