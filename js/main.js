@@ -34,7 +34,7 @@ function release(event) {
 
 /**
  * adds styles to the pressed key
- * for tab add and remove on click
+ * for CapsLock add and remove on click
  * 
  * @param {String} elem - element selector string
  * @param {NodeList} key - element-key with selector @elem
@@ -64,7 +64,7 @@ inp.onkeydown = (event) => {
 
 /**
  * removes styles from released keys
- * do nothing for tab
+ * do nothing for CapsLock
  * 
  * @param {String} elem - element selector string
  * @param {NodeList} key - element-key with selector @elem
