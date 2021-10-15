@@ -5,7 +5,7 @@
 
 Mini project "web-keyboard" with reaction to keystrokes on your keyboard.
 
-:link:  daria-zaiets.github.io/keyboard/ 
+:link: https://daria-zaiets.github.io/keyboard/
 
 ![demo-gif](img/keyboard.gif)
 
